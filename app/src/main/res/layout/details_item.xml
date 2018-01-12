@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/BLACK"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/titleView"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/TITLE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.Space
+        android:layout_width="5dp"
+        android:layout_height="12dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/BLACK"
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"/>
+
+    <android.support.v4.widget.Space
+        android:layout_width="5dp"
+        android:layout_height="8dp" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:scrollbarThumbVertical="@drawable/scrollbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/plotTextView"
+            android:layout_gravity="start"
+            android:textColor="@color/TITLE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v4.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/loadingBar"
+        android:indeterminate="true"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"/>
+
+</LinearLayout>
+

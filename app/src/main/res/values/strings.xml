@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UiDemo</string>
+
+    <string name="openDrawer">Open</string>
+    <string name="closeDrawer">Close</string>
+
+</resources>

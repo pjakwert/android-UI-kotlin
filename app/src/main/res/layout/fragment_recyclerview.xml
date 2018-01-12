@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/BLACK"
+    android:padding="4dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/searchLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Search for: "
+            android:textColor="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:text="Blade"
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="6dp"
+            android:hint="Enter movie title"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/goButton"
+            android:text="Go"
+            android:background="@color/BLACK"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:layout_marginLeft="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:scrollbars="vertical"
+            android:scrollbarThumbVertical="@drawable/scrollbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    <ProgressBar
+        android:id="@+id/loadingProgress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</LinearLayout>
