@@ -46,7 +46,7 @@ class ExampleInstrumentedTest : ActivityInstrumentationTestCase2<MainActivity>(M
 
     @Test
     public fun navigationViewIsVisibleAfterClick() {
-        onView(withClassName( Matchers.equalToIgnoringCase("AppCompatImageButton"))).perform(click())
+        onView(withClassName( Matchers.equalToIgnoringCase("ImageButton"))).perform(click())
         onView(withId(R.id.design_navigation_view)).check(matches(isDisplayed()))
     }
 }
