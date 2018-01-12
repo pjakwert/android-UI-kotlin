@@ -67,7 +67,7 @@ class RecyclerViewFragment : Fragment(), DataAdapter.Listener {
         }
 
         mLoadingSnackBar = Snackbar.make(mSearchLayout, "Loading ...", Snackbar.LENGTH_INDEFINITE)
-                .applyBackgroundColor(R.color.colorPrimaryDark)
+                .setBackgroundColor(R.color.colorPrimaryDark)
 
         mRecyclerView.setHasFixedSize(true)
         mRecyclerView.isNestedScrollingEnabled = false
@@ -173,7 +173,7 @@ class RecyclerViewFragment : Fragment(), DataAdapter.Listener {
     }
 
     fun showErrorMessage(text : String) {
-        Snackbar.make(mSearchLayout, text, Snackbar.LENGTH_SHORT).applyBackgroundColor(R.color.RED).show()
+        Snackbar.make(mSearchLayout, text, Snackbar.LENGTH_SHORT).setBackgroundColor(R.color.RED).show()
     }
 
 
