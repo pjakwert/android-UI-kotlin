@@ -5,7 +5,7 @@ import android.support.v4.content.ContextCompat
 import android.view.View
 
 
-fun Snackbar.setBackgroundColor( colorResId : Int ) : Snackbar {
+fun Snackbar.applyBackgroundColor( colorResId : Int ) : Snackbar {
     val snackbarView = this.view
     val bgId: Int = ContextCompat.getColor(snackbarView.context, colorResId)
     snackbarView.setBackgroundColor(bgId)
